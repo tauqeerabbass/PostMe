@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="flex flex-col h-screen gap-4 bg-zinc-900 text-white p-10">
+        <a href="/logout" class="w-24 px-3 py-2 bg-red-500 rounded-md">Logout</a>
+        <h3 class="text-3xl">Profile</h3>
+        <form action="/update/<%= post._id %>" method="post">
+            <textarea placeholder="Enter your thoughts" name="content" class="mb-2 block px-4 py-2 rounded-lg border-2 bg-transparent resize-none w-1/3"><%= post.content %></textarea>
+            <input type="submit" value="Update post" class="block bg-blue-500 px-8 py-2 rounded-lg">
+        </form>
+    </div>
+</body>
+</html>

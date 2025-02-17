@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <form method="post" action="/upload" enctype="multipart/form-data" class="flex flex-col items-center justify-center h-screen gap-4 bg-zinc-900 text-white">
+        <h3 class="text-3xl mb-5">Upload Profile Picture</h3>
+        <input type="file" name="image">
+        <input class="bg-blue-500 px-8 py-2 rounded-lg" type="submit" name="submit" value="Upload File">
+    </form>
+</body>
+</html>
