@@ -1,2 +1,3 @@
 # PostMe
-This is a mini project in backend where users can make posts.
+Backend Mini Project.
+This is a Node.js and Express-based backend application designed for user management and content creation. It allows users to register and authenticate using secure methods like bcrypt for password hashing and JWT for token-based authentication. The app supports user profile creation, enabling users to make and manage posts on their profile. Additionally, we’ve implemented protected routes to ensure secure access to sensitive data. The app provides a seamless and secure experience for users to interact with personalized content while maintaining privacy and security.
